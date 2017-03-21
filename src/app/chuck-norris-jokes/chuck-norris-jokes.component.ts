@@ -29,10 +29,8 @@ export class ChuckNorrisJokesComponent implements OnInit {
 
   ngAfterViewInit(){
 
-    this.joke$=Observable.fromEvent(this.btnRandom.nativeElement,'click')
-      .switchMap(()=> this.http.get('http://api.icndb.com/jokes/random'))
-      .map(response=>response.json())
-      .map(obj=> obj.value.joke)
+    //Your code here 'http://api.icndb.com/jokes/random'
+
 
 
 

@@ -30,12 +30,5 @@ export class WeightSliderComponent implements OnInit,AfterViewInit {
 
   ngAfterViewInit(){
 
-    Observable.fromEvent(this.weightSlider.nativeElement,'input')
-      .map( (e:any) => e.target.value)
-      //.startWith(this.weightSlider.nativeElement.value)
-      .subscribe(val=> {
-        this.weightText=val
-      });
-
   }
 }
